@@ -55,11 +55,15 @@ DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2} \d{2}:\d{2})")
 
 def parse_warsaw_datetime(date_str: str) -> datetime | None:
     """
-    Parsuje string w formacie 'YYYY-MM-DD HH:MM' jako datę w strefie Europe/Warsaw.
-    Zwraca obiekt datetime z tzinfo.
+    Parsuje string w formacie 'YYYY-MM-DD HH:MM' (ew. z sekundami)
+    jako datę w strefie Europe/Warsaw.
     """
     try:
-        naive = datetime.strptime(date_str.strip(), "%Y-%m-%d %H:%M")
+        date_str = date_str.strip()
+        # jeśli jest z sekundami, obetnij do minut
+        if len(date_str) >= 16:
+            date_str = date_str[:16]
+        naive = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
         return WARSAW_TZ.localize(naive)
     except Exception as exc:  # noqa: BLE001
         logging.warning("Nie udało się sparsować daty z listy: %s (%s)", date_str, exc)
@@ -183,16 +187,21 @@ def normalize_url(href: str) -> str | None:
 
 
 def parse_listing_page(html: str, session: requests.Session) -> list[dict]:
+    """
+    Parsuje stronę listy wiadomości, zwracając listę:
+    { "title": ..., "url": ..., "published": datetime }
+    Korzysta z realnej struktury:
+    section#articleListSection -> div.entry-title a + poprzedni div.entry-meta
+    """
     soup = BeautifulSoup(html, "html.parser")
     items: list[dict] = []
 
-    for div in soup.select("div.entry.entry--article"):
-        # --- Tytuł i URL ---
-        a = div.select_one("a.entry__title")
-        if not a or not a.get("href"):
-            continue
+    # główny kontener listy artykułów
+    root = soup.select_one("section#articleListSection") or soup
 
-        url = normalize_url(a["href"])
+    # każdy artykuł ma tytuł w: <div class="entry-title"><a ...></a></div>
+    for a in root.select("div.entry-title a[href]"):
+        url = normalize_url(a.get("href"))
         if not url:
             continue
 
@@ -200,16 +209,30 @@ def parse_listing_page(html: str, session: requests.Session) -> list[dict]:
         if not title:
             continue
 
-        # --- Data publikacji (1. źródło: listing) ---
-        meta = div.select_one("div.entry__meta")
         published = None
 
-        if meta:
-            match = DATE_RE.search(meta.get_text(" ", strip=True))
-            if match:
-                published = parse_warsaw_datetime(match.group(1))
+        # znajdź poprzedni blok meta z datą
+        meta_div = a.find_previous("div", class_="entry-meta")
+        if meta_div:
+            # 1) spróbuj wziąć datetime z taga <time>
+            time_tag = meta_div.find("time")
+            if time_tag and time_tag.get("datetime"):
+                dt_raw = time_tag["datetime"]
+                # np. "2025-12-29 17:46:29" albo "2025-12-29 17:46"
+                # obetnij do "YYYY-MM-DD HH:MM"
+                dt_raw = dt_raw.strip()
+                if len(dt_raw) >= 16:
+                    dt_raw = dt_raw[:16]
+                published = parse_warsaw_datetime(dt_raw)
 
-        # --- Fallback: meta w artykule ---
+            # 2) fallback – szukaj daty w tekście, jeśli powyższe się nie uda
+            if published is None:
+                text = meta_div.get_text(" ", strip=True)
+                m = DATE_RE.search(text)
+                if m:
+                    published = parse_warsaw_datetime(m.group(1))
+
+        # 3) ostateczny fallback – zajrzyj do samego artykułu
         if published is None:
             logging.info("Brak daty na liście – pobieram meta z artykułu: %s", url)
             published = fetch_article_published_datetime(session, url)
@@ -226,6 +249,7 @@ def parse_listing_page(html: str, session: requests.Session) -> list[dict]:
             }
         )
 
+    logging.info("Na liście znaleziono %d artykułów (po stronie)", len(items))
     return items
 
 
