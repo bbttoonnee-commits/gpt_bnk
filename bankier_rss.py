@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Generuje kanał RSS z działu "Wiadomości dnia" na Bankier.pl.
+Generuje kanał RSS z działu "Wiadomości" na Bankier.pl.
 
-- Skanuje pierwsze N stron listy wiadomości.
-- Pobiera tytuł, link i datę publikacji głównie z listy (anti-bot friendly).
-- Fallbackowo (tylko gdy potrzeba) dogrywa datę z meta tagu artykułu.
-- Filtruje tylko wiadomości z ostatnich X godzin.
-- Generuje RSS 2.0 na stdout (można przekierować do pliku w GitHub Actions).
+- Skanuje pierwsze PAGES_TO_SCAN stron /wiadomosc/.
+- Pobiera tytuł, link i datę publikacji (najpierw z listy, ewentualnie z meta-tagów artykułu).
+- Filtruje tylko artykuły z ostatnich MAX_AGE_HOURS godzin.
+- Eliminacja duplikatów po URL.
+- Generuje RSS 2.0 na stdout – idealne do GitHub Actions.
 
 Wymagane pakiety:
     pip install requests beautifulsoup4 feedgen pytz
@@ -25,7 +25,7 @@ import requests
 from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
 
-# ---------------- Konfiguracja ----------------
+# -------------------- KONFIGURACJA --------------------
 
 BASE_URL = "https://www.bankier.pl"
 LISTING_BASE = f"{BASE_URL}/wiadomosc/"  # strona 1
@@ -48,19 +48,21 @@ REQUEST_TIMEOUT = 10  # sekundy
 SLEEP_BETWEEN_PAGES = (1.0, 2.5)  # min, max sekund
 
 WARSAW_TZ = pytz.timezone("Europe/Warsaw")
+
+# dopasowuje "2025-12-29 17:46"
 DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2} \d{2}:\d{2})")
 
 
-# ---------------- Pomocnicze funkcje czasu ----------------
+# -------------------- POMOCNICZE – CZAS --------------------
 
-def parse_warsaw_datetime(date_str: str) -> datetime | None:
+def parse_warsaw_datetime(date_str):
     """
     Parsuje string w formacie 'YYYY-MM-DD HH:MM' (ew. z sekundami)
     jako datę w strefie Europe/Warsaw.
     """
     try:
         date_str = date_str.strip()
-        # jeśli jest z sekundami, obetnij do minut
+        # jeśli jest z sekundami ("YYYY-MM-DD HH:MM:SS"), obetnij do minut
         if len(date_str) >= 16:
             date_str = date_str[:16]
         naive = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
@@ -70,19 +72,18 @@ def parse_warsaw_datetime(date_str: str) -> datetime | None:
         return None
 
 
-def parse_iso_datetime_to_warsaw(iso_str: str) -> datetime | None:
+def parse_iso_datetime_to_warsaw(iso_str):
     """
     Parsuje ISO 8601 z meta-tagów artykułu do strefy Europe/Warsaw.
     Przykłady: '2025-12-29T09:34:00+01:00', '2025-12-29T08:34:00Z'
     """
     try:
         iso_str = iso_str.strip()
-        # z -> +00:00 dla kompatybilności z datetime.fromisoformat
+        # 'Z' -> '+00:00' dla kompatybilności z datetime.fromisoformat
         if iso_str.endswith("Z"):
             iso_str = iso_str[:-1] + "+00:00"
         dt = datetime.fromisoformat(iso_str)
         if dt.tzinfo is None:
-            # jeśli przypadkiem brak tzinfo, załóżmy lokalną (Warszawa)
             dt = WARSAW_TZ.localize(dt)
         return dt.astimezone(WARSAW_TZ)
     except Exception as exc:  # noqa: BLE001
@@ -90,12 +91,12 @@ def parse_iso_datetime_to_warsaw(iso_str: str) -> datetime | None:
         return None
 
 
-# ---------------- HTTP / pobieranie stron ----------------
+# -------------------- HTTP --------------------
 
-def fetch_url(session: requests.Session, url: str) -> str | None:
+def fetch_url(session, url):
     """
     Pobiera stronę z lekkim retry.
-    Zwraca text HTML lub None jeśli nie udało się pobrać.
+    Zwraca text HTML lub None, jeśli się nie uda.
     """
     for attempt in range(3):
         try:
@@ -109,18 +110,52 @@ def fetch_url(session: requests.Session, url: str) -> str | None:
     return None
 
 
-# ---------------- Parsowanie daty i artykułów z listy ----------------
+# -------------------- NORMALIZACJA / DATY Z LISTY --------------------
 
-def find_date_for_anchor(a_tag) -> datetime | None:
+def normalize_url(href):
+    """
+    Normalizuje href do pełnego URL i filtruje tylko linki do artykułów wiadomości.
+    - tylko domena bankier.pl
+    - tylko ścieżki zawierające /wiadomosc/
+    - pomija listingi typu /wiadomosc/, /wiadomosc/2 itd.
+    """
+    if not href:
+        return None
+
+    # absolutny URL
+    if href.startswith("http://") or href.startswith("https://"):
+        url = href
+    elif href.startswith("/"):
+        url = BASE_URL + href
+    else:
+        # inne relative – pomijamy
+        return None
+
+    if not url.startswith(f"{BASE_URL}/"):
+        return None
+
+    if "/wiadomosc/" not in url:
+        return None
+
+    # odfiltruj listingi /wiadomosc/, /wiadomosc/2, /wiadomosc/3...
+    listing_pattern = re.compile(r"/wiadomosc(/(\d+)?)?/?$")
+    if listing_pattern.search(url):
+        return None
+
+    return url
+
+
+def find_date_for_anchor(a_tag):
     """
     Szuka tekstu z datą tuż przed linkiem do artykułu na liście.
-    Przykładowy tekst: '2025-12-29 12:46 Aktualizacja: 2025-12-29 13:13'
+    Przykładowy tekst:
+        '2025-12-29 17:14 Aktualizacja: 2025-12-29 21:09'
     Bierzemy pierwsze dopasowanie 'YYYY-MM-DD HH:MM'.
     """
     if a_tag is None:
         return None
 
-    # szukamy najbliższego wcześniejszego węzła tekstowego z datą
+    # najbliższy wcześniejszy węzeł tekstowy z datą
     text_node = a_tag.find_previous(string=DATE_RE)
     if not text_node:
         return None
@@ -133,10 +168,7 @@ def find_date_for_anchor(a_tag) -> datetime | None:
     return parse_warsaw_datetime(date_str)
 
 
-def fetch_article_published_datetime(
-    session: requests.Session,
-    url: str,
-) -> datetime | None:
+def fetch_article_published_datetime(session, url):
     """
     Fallback – gdy nie uda się odczytać daty z listy,
     dogrywamy ją z meta-tagów konkretnego artykułu.
@@ -153,55 +185,30 @@ def fetch_article_published_datetime(
     return parse_iso_datetime_to_warsaw(meta["content"])
 
 
-def normalize_url(href: str) -> str | None:
+# -------------------- PARSOWANIE LISTY --------------------
+
+def parse_listing_page(html, session):
     """
-    Normalizuje href do pełnego URL i filtruje tylko linki do artykułów wiadomości.
-    Pomija listingi typu /wiadomosc/, /wiadomosc/2 itd.
-    """
-    if not href:
-        return None
+    Parsuje stronę listy wiadomości, zwracając listę słowników:
+    {
+        "title": ...,
+        "url": ...,
+        "published": datetime (tz = Europe/Warsaw)
+    }
 
-    # absolutny URL
-    if href.startswith("http://") or href.startswith("https://"):
-        url = href
-    elif href.startswith("/"):
-        url = BASE_URL + href
-    else:
-        # link względny innego typu – pomijamy
-        return None
-
-    # tylko domena bankier.pl
-    if not url.startswith(f"{BASE_URL}/"):
-        return None
-
-    # tylko ścieżki zawierające /wiadomosc/
-    if "/wiadomosc/" not in url:
-        return None
-
-    # odfiltruj listingi typu /wiadomosc/, /wiadomosc/2, /wiadomosc/3 itd.
-    listing_pattern = re.compile(r"/wiadomosc(/(\d+)?)?/?$")
-    if listing_pattern.search(url):
-        return None
-
-    return url
-
-
-def parse_listing_page(html: str, session: requests.Session) -> list[dict]:
-    """
-    Parsuje stronę listy wiadomości, zwracając listę:
-    { "title": ..., "url": ..., "published": datetime }
-    Korzysta z realnej struktury:
-    section#articleListSection -> div.entry-title a + poprzedni div.entry-meta
+    Logika:
+    - przechodzimy po wszystkich <a href="...">
+    - normalizujemy URL (tylko /wiadomosc/..., bez listingów)
+    - ignorujemy linki typu "Czytaj dalej"
+    - bierzemy artykuły, dla których uda się znaleźć datę tuż przed linkiem
+      (sekcja „Wiadomości dnia”)
+    - jeśli daty nie ma, jednorazowy fallback: meta w artykule
     """
     soup = BeautifulSoup(html, "html.parser")
-    items: list[dict] = []
+    items = []
 
-    # główny kontener listy artykułów
-    root = soup.select_one("section#articleListSection") or soup
-
-    # każdy artykuł ma tytuł w: <div class="entry-title"><a ...></a></div>
-    for a in root.select("div.entry-title a[href]"):
-        url = normalize_url(a.get("href"))
+    for a in soup.find_all("a", href=True):
+        url = normalize_url(a["href"])
         if not url:
             continue
 
@@ -209,30 +216,14 @@ def parse_listing_page(html: str, session: requests.Session) -> list[dict]:
         if not title:
             continue
 
-        published = None
+        # ignorujemy drugi link do tego samego artykułu typu "Czytaj dalej"
+        if title.lower().startswith("czytaj dalej"):
+            continue
 
-        # znajdź poprzedni blok meta z datą
-        meta_div = a.find_previous("div", class_="entry-meta")
-        if meta_div:
-            # 1) spróbuj wziąć datetime z taga <time>
-            time_tag = meta_div.find("time")
-            if time_tag and time_tag.get("datetime"):
-                dt_raw = time_tag["datetime"]
-                # np. "2025-12-29 17:46:29" albo "2025-12-29 17:46"
-                # obetnij do "YYYY-MM-DD HH:MM"
-                dt_raw = dt_raw.strip()
-                if len(dt_raw) >= 16:
-                    dt_raw = dt_raw[:16]
-                published = parse_warsaw_datetime(dt_raw)
+        # najpierw spróbuj znaleźć datę na liście
+        published = find_date_for_anchor(a)
 
-            # 2) fallback – szukaj daty w tekście, jeśli powyższe się nie uda
-            if published is None:
-                text = meta_div.get_text(" ", strip=True)
-                m = DATE_RE.search(text)
-                if m:
-                    published = parse_warsaw_datetime(m.group(1))
-
-        # 3) ostateczny fallback – zajrzyj do samego artykułu
+        # Fallback – wchodzimy w artykuł tylko jeśli naprawdę brak daty
         if published is None:
             logging.info("Brak daty na liście – pobieram meta z artykułu: %s", url)
             published = fetch_article_published_datetime(session, url)
@@ -253,17 +244,17 @@ def parse_listing_page(html: str, session: requests.Session) -> list[dict]:
     return items
 
 
-# ---------------- Główna logika: crawl + filtracja ----------------
+# -------------------- CRAWL + FILTR --------------------
 
-def crawl_bankier_news() -> list[dict]:
+def crawl_bankier_news():
     """
     Skanuje kilka stron listy wiadomości i zwraca unikalne artykuły
-    z datą w strefie Europe/Warsaw.
+    z datą w strefie Europe/Warsaw, przefiltrowane do ostatnich MAX_AGE_HOURS.
     """
     session = requests.Session()
     session.headers.update(HEADERS)
 
-    all_items: list[dict] = []
+    all_items = []
 
     for page in range(1, PAGES_TO_SCAN + 1):
         if page == 1:
@@ -274,24 +265,24 @@ def crawl_bankier_news() -> list[dict]:
         logging.info("Pobieram stronę %d: %s", page, url)
         html = fetch_url(session, url)
         if html is None:
-            # błąd tej strony nie przerywa całego procesu
             logging.error("Pomijam stronę %d z powodu błędu pobierania", page)
         else:
             try:
                 page_items = parse_listing_page(html, session)
-                logging.info("Na stronie %d znaleziono %d artykułów", page, len(page_items))
+                logging.info(
+                    "Na stronie %d po parsowaniu: %d artykułów", page, len(page_items)
+                )
                 all_items.extend(page_items)
             except Exception as exc:  # noqa: BLE001
                 logging.exception("Błąd parsowania strony %d: %s", page, exc)
 
-        # anti-bot: losowy sleep między stronami
         if page < PAGES_TO_SCAN:
             delay = random.uniform(*SLEEP_BETWEEN_PAGES)
             logging.debug("Sleep po stronie %d: %.2f s", page, delay)
             time.sleep(delay)
 
-    # Eliminacja duplikatów po URL – zostawiamy najnowszą wersję danego linku
-    dedup: dict[str, dict] = {}
+    # deduplikacja po URL – zostawiamy najnowszą datę dla danego linku
+    dedup = {}
     for item in all_items:
         url = item["url"]
         prev = dedup.get(url)
@@ -301,7 +292,7 @@ def crawl_bankier_news() -> list[dict]:
     unique_items = list(dedup.values())
     logging.info("Po deduplikacji: %d artykułów", len(unique_items))
 
-    # filtr czasowy (ostatnie MAX_AGE_HOURS godzin)
+    # filtr czasowy
     now = datetime.now(WARSAW_TZ)
     cutoff = now - timedelta(hours=MAX_AGE_HOURS)
     filtered = [i for i in unique_items if i["published"] >= cutoff]
@@ -312,14 +303,14 @@ def crawl_bankier_news() -> list[dict]:
         cutoff.isoformat(),
     )
 
-    # sortowanie od najnowszego
+    # sort od najnowszego
     filtered.sort(key=lambda x: x["published"], reverse=True)
     return filtered
 
 
-# ---------------- Generowanie RSS ----------------
+# -------------------- RSS --------------------
 
-def build_rss_feed(items: list[dict]) -> FeedGenerator:
+def build_rss_feed(items):
     """
     Buduje obiekt FeedGenerator z listy artykułów.
     """
@@ -328,9 +319,11 @@ def build_rss_feed(items: list[dict]) -> FeedGenerator:
 
     fg.id("bankier-wiadomosci-rss")
     fg.title("Bankier.pl – Wiadomości (nieoficjalny RSS)")
-    fg.description("Nieoficjalny kanał RSS z działu wiadomości Bankier.pl, generowany skryptem w Pythonie.")
+    fg.description(
+        "Nieoficjalny kanał RSS z działu wiadomości Bankier.pl, generowany skryptem w Pythonie."
+    )
     fg.link(href=LISTING_BASE, rel="alternate")
-    # jeśli masz publiczny URL RSS-a, możesz go tu wstawić
+    # jeśli masz publiczny URL RSS-a (np. z GitHub Pages), wstaw go tutaj:
     fg.link(href="https://example.com/bankier-rss.xml", rel="self")
     fg.language("pl")
 
@@ -352,7 +345,9 @@ def build_rss_feed(items: list[dict]) -> FeedGenerator:
     return fg
 
 
-def main() -> None:
+# -------------------- MAIN --------------------
+
+def main():
     logging.basicConfig(
         level=logging.INFO,
         format="[%(levelname)s] %(message)s",
@@ -361,7 +356,6 @@ def main() -> None:
     items = crawl_bankier_news()
     fg = build_rss_feed(items)
 
-    # Generujemy RSS na stdout – idealne do GitHub Actions
     rss_bytes = fg.rss_str(pretty=True)
     sys.stdout.write(rss_bytes.decode("utf-8"))
 
