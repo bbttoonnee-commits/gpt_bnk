@@ -302,6 +302,7 @@ def build_rss_feed(items: list[dict]) -> FeedGenerator:
 
     fg.id("bankier-wiadomosci-rss")
     fg.title("Bankier.pl – Wiadomości (nieoficjalny RSS)")
+    fg.description("Nieoficjalny kanał RSS z działu wiadomości Bankier.pl, generowany skryptem w Pythonie.")
     fg.link(href=LISTING_BASE, rel="alternate")
     # jeśli masz publiczny URL RSS-a, możesz go tu wstawić
     fg.link(href="https://example.com/bankier-rss.xml", rel="self")
