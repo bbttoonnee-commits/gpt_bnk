@@ -183,19 +183,15 @@ def normalize_url(href: str) -> str | None:
 
 
 def parse_listing_page(html: str, session: requests.Session) -> list[dict]:
-    """
-    Parsuje stronę listy wiadomości, zwracając listę słowników:
-    {
-        "title": ...,
-        "url": ...,
-        "published": datetime (tz = Europe/Warsaw)
-    }
-    """
     soup = BeautifulSoup(html, "html.parser")
     items: list[dict] = []
 
-    # przechodzimy po WSZYSTKICH <a> i filtrujemy po normalize_url
-    for a in soup.find_all("a", href=True):
+    for div in soup.select("div.entry.entry--article"):
+        # --- Tytuł i URL ---
+        a = div.select_one("a.entry__title")
+        if not a or not a.get("href"):
+            continue
+
         url = normalize_url(a["href"])
         if not url:
             continue
@@ -204,10 +200,16 @@ def parse_listing_page(html: str, session: requests.Session) -> list[dict]:
         if not title:
             continue
 
-        # najpierw próbujemy wyciągnąć datę z listy
-        published = find_date_for_anchor(a)
+        # --- Data publikacji (1. źródło: listing) ---
+        meta = div.select_one("div.entry__meta")
+        published = None
 
-        # Fallback – wchodzimy w artykuł TYLKO jeśli brakuje daty
+        if meta:
+            match = DATE_RE.search(meta.get_text(" ", strip=True))
+            if match:
+                published = parse_warsaw_datetime(match.group(1))
+
+        # --- Fallback: meta w artykule ---
         if published is None:
             logging.info("Brak daty na liście – pobieram meta z artykułu: %s", url)
             published = fetch_article_published_datetime(session, url)
