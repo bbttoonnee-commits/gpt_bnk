@@ -1,0 +1,649 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Bankier.pl – Wiadomości (nieoficjalny RSS)</title>
+    <link>https://example.com/bankier-rss.xml</link>
+    <description>Nieoficjalny kanał RSS z działu wiadomości Bankier.pl, generowany skryptem w Pythonie.</description>
+    <atom:link href="https://example.com/bankier-rss.xml" rel="self"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>pl</language>
+    <lastBuildDate>Mon, 29 Dec 2025 21:09:00 +0100</lastBuildDate>
+    <item>
+      <title>Święta a budżet domowy w USA. Amerykanie zaciskają pasa</title>
+      <link>https://www.bankier.pl/wiadomosc/Swieta-a-budzet-domowy-w-USA-Amerykanie-zaciskaja-pasa-9061176.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Swieta-a-budzet-domowy-w-USA-Amerykanie-zaciskaja-pasa-9061176.html</guid>
+      <pubDate>Sun, 28 Dec 2025 13:54:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Świadczenie wspierające 2026: ile można dostać i jak liczone są punkty?</title>
+      <link>https://www.bankier.pl/wiadomosc/Swiadczenie-wspierajace-2026-ile-mozna-dostac-i-jak-liczone-sa-punkty-9059571.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Swiadczenie-wspierajace-2026-ile-mozna-dostac-i-jak-liczone-sa-punkty-9059571.html</guid>
+      <pubDate>Sun, 28 Dec 2025 14:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Nawet 20 mld euro z KPO w jeden rok. Ważna prognoza dla Polski</title>
+      <link>https://www.bankier.pl/wiadomosc/Nawet-20-mld-euro-z-KPO-w-jeden-rok-Wazna-prognoza-dla-Polski-9058119.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Nawet-20-mld-euro-z-KPO-w-jeden-rok-Wazna-prognoza-dla-Polski-9058119.html</guid>
+      <pubDate>Sun, 28 Dec 2025 14:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Nie tylko sprzęt, ale i wiedza. Jak mądrze korzystać z AI?</title>
+      <link>https://www.bankier.pl/wiadomosc/Nie-tylko-sprzet-ale-i-wiedza-Jak-madrze-korzystac-z-AI-9056481.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Nie-tylko-sprzet-ale-i-wiedza-Jak-madrze-korzystac-z-AI-9056481.html</guid>
+      <pubDate>Sun, 28 Dec 2025 14:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Ofiary, zniszczenia i przerwy w dostawach prądu. Bilans rosyjskiego uderzenia</title>
+      <link>https://www.bankier.pl/wiadomosc/Zmasowany-atak-na-Kijow-22-rannych-setki-tysiecy-domow-bez-pradu-9061074.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Zmasowany-atak-na-Kijow-22-rannych-setki-tysiecy-domow-bez-pradu-9061074.html</guid>
+      <pubDate>Sun, 28 Dec 2025 14:05:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Blaski i cienie polskiej bankowości. Rok 2026 będzie "testem dojrzałości" dla banków</title>
+      <link>https://www.bankier.pl/wiadomosc/Blaski-i-cienie-polskiej-bankowosci-Rok-2026-bedzie-testem-dojrzalosci-dla-bankow-9061198.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Blaski-i-cienie-polskiej-bankowosci-Rok-2026-bedzie-testem-dojrzalosci-dla-bankow-9061198.html</guid>
+      <pubDate>Sun, 28 Dec 2025 14:26:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Atomowy rozejm. MAEA naprawia zasilanie największej siłowni nuklearnej w Europie</title>
+      <link>https://www.bankier.pl/wiadomosc/Atomowy-rozejm-MAEA-naprawia-zasilanie-najwiekszej-silowni-nuklearnej-w-Europie-9061209.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Atomowy-rozejm-MAEA-naprawia-zasilanie-najwiekszej-silowni-nuklearnej-w-Europie-9061209.html</guid>
+      <pubDate>Sun, 28 Dec 2025 14:38:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Forum Energii: stałe taryfy stają się najdroższą opcją. Czas na ceny dynamiczne?</title>
+      <link>https://www.bankier.pl/wiadomosc/Forum-Energii-stale-taryfy-staja-sie-najdrozsza-opcja-Czas-na-ceny-dynamiczne-9061207.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Forum-Energii-stale-taryfy-staja-sie-najdrozsza-opcja-Czas-na-ceny-dynamiczne-9061207.html</guid>
+      <pubDate>Sun, 28 Dec 2025 14:41:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Szczyt z udziałem Zełenskiego poprzedzony telefonem do Putina</title>
+      <link>https://www.bankier.pl/wiadomosc/Szczyt-z-udzialem-Zelenskiego-poprzedzony-telefonem-do-Putina-9061265.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Szczyt-z-udzialem-Zelenskiego-poprzedzony-telefonem-do-Putina-9061265.html</guid>
+      <pubDate>Sun, 28 Dec 2025 18:44:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Finlandia podnosi wiek rezerwistów. Do wojska nawet po sześćdziesiątce</title>
+      <link>https://www.bankier.pl/wiadomosc/Finlandia-podnosi-wiek-rezerwistow-Do-wojska-nawet-po-szescdziesiatce-9059966.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Finlandia-podnosi-wiek-rezerwistow-Do-wojska-nawet-po-szescdziesiatce-9059966.html</guid>
+      <pubDate>Sun, 28 Dec 2025 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>W rozmowach o Ukrainie chodzi tylko o jedno. "Walka o względy Trumpa"</title>
+      <link>https://www.bankier.pl/wiadomosc/W-rozmowach-o-Ukrainie-chodzi-tylko-o-jedno-Walka-o-wzgledy-Trumpa-9059658.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/W-rozmowach-o-Ukrainie-chodzi-tylko-o-jedno-Walka-o-wzgledy-Trumpa-9059658.html</guid>
+      <pubDate>Sun, 28 Dec 2025 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Kreml reaktywuje jednostkę GUGI. Cel: sabotaż infrastruktury na dnie oceanu</title>
+      <link>https://www.bankier.pl/wiadomosc/Kreml-reaktywuje-jednostke-GUGI-Cel-sabotaz-infrastruktury-na-dnie-oceanu-9059498.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Kreml-reaktywuje-jednostke-GUGI-Cel-sabotaz-infrastruktury-na-dnie-oceanu-9059498.html</guid>
+      <pubDate>Sun, 28 Dec 2025 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Oś populizmu w Europie? Liderzy prawicy chcą wspólnie "przywrócić granice"</title>
+      <link>https://www.bankier.pl/wiadomosc/Os-populizmu-w-Europie-Liderzy-prawicy-chca-wspolnie-przywrocic-granice-9053496.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Os-populizmu-w-Europie-Liderzy-prawicy-chca-wspolnie-przywrocic-granice-9053496.html</guid>
+      <pubDate>Sun, 28 Dec 2025 19:25:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>7 mln euro dla terrorystów pod przykrywką pomocy humanitarnej</title>
+      <link>https://www.bankier.pl/wiadomosc/7-mln-euro-dla-terrorystow-pod-przykrywka-pomocy-humanitarnej-9061242.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/7-mln-euro-dla-terrorystow-pod-przykrywka-pomocy-humanitarnej-9061242.html</guid>
+      <pubDate>Sun, 28 Dec 2025 19:49:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Polskie plecionkarstwo wpisane na listę UNESCO. "Ukoronowanie prawie 18 lat starań"</title>
+      <link>https://www.bankier.pl/wiadomosc/Polskie-plecionkarstwo-wpisane-na-liste-UNESCO-Ukoronowanie-prawie-18-lat-staran-9054090.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Polskie-plecionkarstwo-wpisane-na-liste-UNESCO-Ukoronowanie-prawie-18-lat-staran-9054090.html</guid>
+      <pubDate>Sun, 28 Dec 2025 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>100 mln paczek z Chin w rok. Polacy pokochali tanie zakupy</title>
+      <link>https://www.bankier.pl/wiadomosc/100-mln-paczek-z-Chin-w-rok-Polacy-pokochali-tanie-zakupy-9056591.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/100-mln-paczek-z-Chin-w-rok-Polacy-pokochali-tanie-zakupy-9056591.html</guid>
+      <pubDate>Sun, 28 Dec 2025 20:20:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Szczyt na Florydzie. Trump: Mamy podstawy do zawarcia porozumienia w sprawie Ukrainy</title>
+      <link>https://www.bankier.pl/wiadomosc/Szczyt-na-Florydzie-Trump-zapowiada-mocne-gwarancje-bezpieczenstwa-dla-Ukrainy-9061272.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Szczyt-na-Florydzie-Trump-zapowiada-mocne-gwarancje-bezpieczenstwa-dla-Ukrainy-9061272.html</guid>
+      <pubDate>Sun, 28 Dec 2025 20:29:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Protest w kopalni Silesia. Minister Motyka jedzie na Śląsk, ale stawia twarde warunki</title>
+      <link>https://www.bankier.pl/wiadomosc/Protest-w-kopalni-Silesia-Minister-Motyka-jedzie-na-Slask-ale-stawia-twarde-warunki-9061289.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Protest-w-kopalni-Silesia-Minister-Motyka-jedzie-na-Slask-ale-stawia-twarde-warunki-9061289.html</guid>
+      <pubDate>Sun, 28 Dec 2025 22:05:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Starmer i europejscy liderzy chwalą Trumpa. "Osiągnięto znaczny postęp"</title>
+      <link>https://www.bankier.pl/wiadomosc/Starmer-i-europejscy-liderzy-chwala-Trumpa-Osiagnieto-znaczny-postep-9061302.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Starmer-i-europejscy-liderzy-chwala-Trumpa-Osiagnieto-znaczny-postep-9061302.html</guid>
+      <pubDate>Sun, 28 Dec 2025 23:47:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Tak dobrze dawno nie było, same korzystne zmiany w hipotekach</title>
+      <link>https://www.bankier.pl/wiadomosc/Kredyty-hipoteczne-w-2025-oprocentowanie-zdolnosc-kredytowa-9060299.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Kredyty-hipoteczne-w-2025-oprocentowanie-zdolnosc-kredytowa-9060299.html</guid>
+      <pubDate>Mon, 29 Dec 2025 06:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Nawrocki przywódcą prawicowego sojuszu? PiS i Konfederacja rozważają pakt senacki</title>
+      <link>https://www.bankier.pl/wiadomosc/Nawrocki-przywodca-prawicowego-sojuszu-PiS-i-Konfederacja-rozwazaja-pakt-senacki-9061340.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Nawrocki-przywodca-prawicowego-sojuszu-PiS-i-Konfederacja-rozwazaja-pakt-senacki-9061340.html</guid>
+      <pubDate>Mon, 29 Dec 2025 06:45:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Trump i Zełenski głoszą postępy w rozmowach. "Jesteśmy coraz bliżej porozumienia, może nawet bardzo blisko"</title>
+      <link>https://www.bankier.pl/wiadomosc/Pokoj-na-Ukrainie-Rosja-ma-zaplacic-za-odbudowe-Sensacyjne-slowa-Trumpa-o-hojnosci-Putina-9061304.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Pokoj-na-Ukrainie-Rosja-ma-zaplacic-za-odbudowe-Sensacyjne-slowa-Trumpa-o-hojnosci-Putina-9061304.html</guid>
+      <pubDate>Mon, 29 Dec 2025 07:07:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Hosso na GPW trwaj. Prognozy na 2026 rok są obiecujące</title>
+      <link>https://www.bankier.pl/wiadomosc/Hosso-na-GPW-trwaj-Prognozy-na-2026-rok-sa-obiecujace-9061348.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Hosso-na-GPW-trwaj-Prognozy-na-2026-rok-sa-obiecujace-9061348.html</guid>
+      <pubDate>Mon, 29 Dec 2025 07:11:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Dyskryminacja płacowa i lawina skarg. Szef PIP wskazuje wyzwania</title>
+      <link>https://www.bankier.pl/wiadomosc/Dyskryminacja-placowa-i-lawina-skarg-Szef-PIP-wskazuje-wyzwania-9061329.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Dyskryminacja-placowa-i-lawina-skarg-Szef-PIP-wskazuje-wyzwania-9061329.html</guid>
+      <pubDate>Mon, 29 Dec 2025 07:20:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Koniec politycznego paraliżu? Samostanowienie wygrywa przedterminowe wybory</title>
+      <link>https://www.bankier.pl/wiadomosc/Koniec-politycznego-paralizu-Samostanowienie-wygrywa-przedterminowe-wybory-9061299.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Koniec-politycznego-paralizu-Samostanowienie-wygrywa-przedterminowe-wybory-9061299.html</guid>
+      <pubDate>Mon, 29 Dec 2025 07:21:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Okrągły stół zniknął z Pałacu. Ponad połowa Polaków chwali decyzję Nawrockiego</title>
+      <link>https://www.bankier.pl/wiadomosc/Okragly-stol-zniknal-z-Palacu-Ponad-polowa-Polakow-chwali-decyzje-Nawrockiego-9061322.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Okragly-stol-zniknal-z-Palacu-Ponad-polowa-Polakow-chwali-decyzje-Nawrockiego-9061322.html</guid>
+      <pubDate>Mon, 29 Dec 2025 07:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Inwestycje na kolei z gigantycznym zastrzykiem gotówki</title>
+      <link>https://www.bankier.pl/wiadomosc/Inwestycje-na-kolei-z-gigantycznym-zastrzykiem-gotowki-9061349.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Inwestycje-na-kolei-z-gigantycznym-zastrzykiem-gotowki-9061349.html</guid>
+      <pubDate>Mon, 29 Dec 2025 07:32:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Trzy nowe satelity Iranu na orbicie. Start odbył się na rosyjskiej rakiecie</title>
+      <link>https://www.bankier.pl/wiadomosc/Trzy-nowe-satelity-Iranu-na-orbicie-Start-odbyl-sie-na-rosyjskiej-rakiecie-9061290.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Trzy-nowe-satelity-Iranu-na-orbicie-Start-odbyl-sie-na-rosyjskiej-rakiecie-9061290.html</guid>
+      <pubDate>Mon, 29 Dec 2025 07:40:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Edukacja zdrowotna bez ideologii? Nawrocki szykuje własną wersję przedmiotu</title>
+      <link>https://www.bankier.pl/wiadomosc/Edukacja-zdrowotna-bez-ideologii-Palac-Prezydencki-szykuje-wlasna-wersje-przedmiotu-9061352.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Edukacja-zdrowotna-bez-ideologii-Palac-Prezydencki-szykuje-wlasna-wersje-przedmiotu-9061352.html</guid>
+      <pubDate>Mon, 29 Dec 2025 07:41:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Jazda bez hamulców. Ceny miedzi zbliżają się już do 13 000 USD</title>
+      <link>https://www.bankier.pl/wiadomosc/Jazda-bez-hamulcow-Ceny-miedzi-zblizaja-sie-juz-do-13-000-USD-9061353.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Jazda-bez-hamulcow-Ceny-miedzi-zblizaja-sie-juz-do-13-000-USD-9061353.html</guid>
+      <pubDate>Mon, 29 Dec 2025 07:44:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Ceny ropy w górę. Dla rynku kluczowe rozmowy dot. Ukrainy i polityka Chin</title>
+      <link>https://www.bankier.pl/wiadomosc/Ceny-ropy-w-gore-Dla-rynku-kluczowe-rozmowy-dot-Ukrainy-i-polityka-Chin-9061359.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Ceny-ropy-w-gore-Dla-rynku-kluczowe-rozmowy-dot-Ukrainy-i-polityka-Chin-9061359.html</guid>
+      <pubDate>Mon, 29 Dec 2025 07:59:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Nawet 15 mln zł taniej pożyczki dla firm. Nowy program FENG na cyfryzację i ekologię</title>
+      <link>https://www.bankier.pl/wiadomosc/Nawet-15-mln-zl-taniej-pozyczki-dla-firm-Nowy-program-FENG-na-cyfryzacje-i-ekologie-9061312.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Nawet-15-mln-zl-taniej-pozyczki-dla-firm-Nowy-program-FENG-na-cyfryzacje-i-ekologie-9061312.html</guid>
+      <pubDate>Mon, 29 Dec 2025 07:59:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>2500 zł zamiast 382 zł rocznie? To najniższe stawki podatku katastralnego</title>
+      <link>https://www.bankier.pl/wiadomosc/2500-zl-zamiast-382-zl-rocznie-To-najnizsze-stawki-podatku-katastralnego-9061357.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/2500-zl-zamiast-382-zl-rocznie-To-najnizsze-stawki-podatku-katastralnego-9061357.html</guid>
+      <pubDate>Mon, 29 Dec 2025 08:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Srebro gwiazdą świątecznego handlu. Oszałamiająca zwyżka w tym roku</title>
+      <link>https://www.bankier.pl/wiadomosc/Srebro-gwiazda-swiatecznego-handlu-Oszalamiajaca-zwyzka-w-tym-roku-9061374.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Srebro-gwiazda-swiatecznego-handlu-Oszalamiajaca-zwyzka-w-tym-roku-9061374.html</guid>
+      <pubDate>Mon, 29 Dec 2025 09:02:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Piramidy finansowe w sieci. UOKiK nakłada ponad 24 mln zł kary na 2 spółki</title>
+      <link>https://www.bankier.pl/wiadomosc/Piramidy-finansowe-w-sieci-Ponad-24-mln-zl-kary-od-UOKiK-Urzad-demaskuje-iGenius-i-International-Markets-Live-9061376.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Piramidy-finansowe-w-sieci-Ponad-24-mln-zl-kary-od-UOKiK-Urzad-demaskuje-iGenius-i-International-Markets-Live-9061376.html</guid>
+      <pubDate>Mon, 29 Dec 2025 09:06:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Internetowy narkobiznes. CBZC rozbiło grupę, w której był lekarz i duchowny</title>
+      <link>https://www.bankier.pl/wiadomosc/Internetowy-narkobiznes-CBZC-rozbilo-grupe-w-ktorej-byl-lekarz-i-duchowny-9061371.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Internetowy-narkobiznes-CBZC-rozbilo-grupe-w-ktorej-byl-lekarz-i-duchowny-9061371.html</guid>
+      <pubDate>Mon, 29 Dec 2025 09:27:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Bułgaria przyjmie euro w 2026 roku. Sikorski: Kredyty będą tańsze o 2/3</title>
+      <link>https://www.bankier.pl/wiadomosc/Bulgaria-wchodzi-do-strefy-euro-Kredyty-beda-tansze-o-2-3-9061377.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Bulgaria-wchodzi-do-strefy-euro-Kredyty-beda-tansze-o-2-3-9061377.html</guid>
+      <pubDate>Mon, 29 Dec 2025 09:40:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Ulubieniec Polaków na czele "listy wstydu". Te linie spóźniają się najczęściej</title>
+      <link>https://www.bankier.pl/wiadomosc/Ulubieniec-Polakow-na-czele-listy-wstydu-Te-linie-spozniaja-sie-najczesciej-9061370.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Ulubieniec-Polakow-na-czele-listy-wstydu-Te-linie-spozniaja-sie-najczesciej-9061370.html</guid>
+      <pubDate>Mon, 29 Dec 2025 09:45:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Nawrocki i Braun na fali, zagubiony Hołowia, a Tusk? Zwycięzcy i przegrani 2025 r.</title>
+      <link>https://www.bankier.pl/wiadomosc/Nawrocki-i-Braun-na-fali-zagubiony-Holowia-a-Tusk-Zwyciezcy-i-przegrani-2025-r-9061331.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Nawrocki-i-Braun-na-fali-zagubiony-Holowia-a-Tusk-Zwyciezcy-i-przegrani-2025-r-9061331.html</guid>
+      <pubDate>Mon, 29 Dec 2025 10:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Orlen rozpoczął eksploatację złoża Różańsko w województwie zachodniopomorskim</title>
+      <link>https://www.bankier.pl/wiadomosc/Orlen-rozpoczal-eksploatacje-zloza-Rozansko-w-wojewodztwie-zachodniopomorskim-9061406.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Orlen-rozpoczal-eksploatacje-zloza-Rozansko-w-wojewodztwie-zachodniopomorskim-9061406.html</guid>
+      <pubDate>Mon, 29 Dec 2025 10:22:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Sklejka udawała towar z Kazachstanu. Prokuratura ujawnia kulisy</title>
+      <link>https://www.bankier.pl/wiadomosc/Sklejka-udawala-towar-z-Kazachstanu-Prokuratura-ujawnia-kulisy-procederu-9061385.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Sklejka-udawala-towar-z-Kazachstanu-Prokuratura-ujawnia-kulisy-procederu-9061385.html</guid>
+      <pubDate>Mon, 29 Dec 2025 10:26:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Rozpoczęcie manewrów wokół Tajwanu. Pekin wezwany do ich natychmiastowego przerwania</title>
+      <link>https://www.bankier.pl/wiadomosc/Rozpoczecie-manewrow-wokol-Tajwanu-Pekin-wezwany-do-ich-natychmiastowego-przerwania-9061315.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Rozpoczecie-manewrow-wokol-Tajwanu-Pekin-wezwany-do-ich-natychmiastowego-przerwania-9061315.html</guid>
+      <pubDate>Mon, 29 Dec 2025 10:43:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Chiny uderzają w Izrael. Chodzi o "egoistyczne interesy" w Afryce</title>
+      <link>https://www.bankier.pl/wiadomosc/Izrael-uznal-Somaliland-Chiny-wyrazaja-ostry-sprzeciw-wobec-separatystow-9061408.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Izrael-uznal-Somaliland-Chiny-wyrazaja-ostry-sprzeciw-wobec-separatystow-9061408.html</guid>
+      <pubDate>Mon, 29 Dec 2025 10:47:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Miliardy na czołgi K2. BGK pozyskał środki na realizację umowy z Koreą</title>
+      <link>https://www.bankier.pl/wiadomosc/Miliardy-na-czolgi-K2-BGK-pozyskal-srodki-na-realizacje-umowy-z-Korea-9061418.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Miliardy-na-czolgi-K2-BGK-pozyskal-srodki-na-realizacje-umowy-z-Korea-9061418.html</guid>
+      <pubDate>Mon, 29 Dec 2025 10:58:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>310 mln zł zainwestowane w zbrojeniówkę. "Niezwykła szansa" dla ZM Tarnów</title>
+      <link>https://www.bankier.pl/wiadomosc/310-mln-zl-zainwestowane-w-zbrojeniowke-Niezwykla-szansa-dla-ZM-Tarnow-9061402.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/310-mln-zl-zainwestowane-w-zbrojeniowke-Niezwykla-szansa-dla-ZM-Tarnow-9061402.html</guid>
+      <pubDate>Mon, 29 Dec 2025 10:58:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Biurowiec JSW w Katowicach na sprzedaż. Znamy cenę i szczegóły oferty</title>
+      <link>https://www.bankier.pl/wiadomosc/Biurowiec-JSW-w-Katowicach-na-sprzedaz-Znamy-cene-i-szczegoly-oferty-9061401.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Biurowiec-JSW-w-Katowicach-na-sprzedaz-Znamy-cene-i-szczegoly-oferty-9061401.html</guid>
+      <pubDate>Mon, 29 Dec 2025 11:18:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Dolar blisko tegorocznego dna. Euro po 4,22 zł</title>
+      <link>https://www.bankier.pl/wiadomosc/Dolar-blisko-tegorocznego-dna-Euro-po-4-22-zl-9061431.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Dolar-blisko-tegorocznego-dna-Euro-po-4-22-zl-9061431.html</guid>
+      <pubDate>Mon, 29 Dec 2025 11:29:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Raiffeisen Digital Bank kończy rok z szerszą ofertą lokat. Od teraz można zdeponować środki na długi termin</title>
+      <link>https://www.bankier.pl/wiadomosc/Raiffeisen-Digital-Bank-rozszerza-oferte-Od-teraz-mozna-zdeponowac-srodki-na-dlugi-termin-9061414.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Raiffeisen-Digital-Bank-rozszerza-oferte-Od-teraz-mozna-zdeponowac-srodki-na-dlugi-termin-9061414.html</guid>
+      <pubDate>Mon, 29 Dec 2025 11:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Konsumpcja paliw w Polsce w '26 wzrośnie o 1 proc., w latach '27-'29 ustabilizuje się</title>
+      <link>https://www.bankier.pl/wiadomosc/Konsumpcja-paliw-w-Polsce-w-26-wzrosnie-o-1-proc-w-latach-27-29-ustabilizuje-sie-9061438.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Konsumpcja-paliw-w-Polsce-w-26-wzrosnie-o-1-proc-w-latach-27-29-ustabilizuje-sie-9061438.html</guid>
+      <pubDate>Mon, 29 Dec 2025 11:38:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Kreml w pokojowych nastrojach: Ukraina powinna wycofać żołnierzy z Donbasu</title>
+      <link>https://www.bankier.pl/wiadomosc/Kreml-w-pokojowych-nastrojach-Ukraina-powinna-wycofac-zolnierzy-z-Donbasu-9061442.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Kreml-w-pokojowych-nastrojach-Ukraina-powinna-wycofac-zolnierzy-z-Donbasu-9061442.html</guid>
+      <pubDate>Mon, 29 Dec 2025 11:39:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Zełenski: USA przewidują gwarancje bezpieczeństwa dla Kijowa na 15 lat</title>
+      <link>https://www.bankier.pl/wiadomosc/Zelenski-USA-przewiduja-gwarancje-bezpieczenstwa-dla-Kijowa-na-15-lat-9061398.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Zelenski-USA-przewiduja-gwarancje-bezpieczenstwa-dla-Kijowa-na-15-lat-9061398.html</guid>
+      <pubDate>Mon, 29 Dec 2025 12:01:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Gorąco wokół Tajwanu. "Chińskie wojska naruszyły nasze wody terytorialne"</title>
+      <link>https://www.bankier.pl/wiadomosc/Goraco-wokol-Tajwanu-Chinskie-wojska-naruszyly-nasze-wody-terytorialne-9061463.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Goraco-wokol-Tajwanu-Chinskie-wojska-naruszyly-nasze-wody-terytorialne-9061463.html</guid>
+      <pubDate>Mon, 29 Dec 2025 12:03:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Negocjacje pokojowe w Mar-a-Lago. Prezydent Nawrocki rozmawiał z Trumpem i Zełenskim</title>
+      <link>https://www.bankier.pl/wiadomosc/Negocjacje-pokojowe-w-Mar-a-Lago-Prezydent-Nawrocki-rozmawial-z-Trumpem-i-Zelenskim-9061301.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Negocjacje-pokojowe-w-Mar-a-Lago-Prezydent-Nawrocki-rozmawial-z-Trumpem-i-Zelenskim-9061301.html</guid>
+      <pubDate>Mon, 29 Dec 2025 12:11:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Miliony z Brukseli na polską technologię. Creotech w elitarnym gronie</title>
+      <link>https://www.bankier.pl/wiadomosc/Creotech-Instruments-ma-umowe-na-realizacje-projektu-PIONIER-Q-SAT-9061473.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Creotech-Instruments-ma-umowe-na-realizacje-projektu-PIONIER-Q-SAT-9061473.html</guid>
+      <pubDate>Mon, 29 Dec 2025 12:20:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Giełda to nie kasyno. Obalamy największe mity inwestycyjne Polaków</title>
+      <link>https://www.bankier.pl/wiadomosc/Gielda-to-nie-kasyno-Obalamy-najwieksze-mity-inwestycyjne-Polakow-9061476.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Gielda-to-nie-kasyno-Obalamy-najwieksze-mity-inwestycyjne-Polakow-9061476.html</guid>
+      <pubDate>Mon, 29 Dec 2025 12:23:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Brytyjska armia bez koszar i amunicji? Potrzeba 800 mld funtów na zbrojenia</title>
+      <link>https://www.bankier.pl/wiadomosc/Brytyjska-armia-bez-koszar-i-amunicji-Potrzeba-800-mld-funtow-na-zbrojenia-9061486.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Brytyjska-armia-bez-koszar-i-amunicji-Potrzeba-800-mld-funtow-na-zbrojenia-9061486.html</guid>
+      <pubDate>Mon, 29 Dec 2025 12:35:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Dzieci Zygmunta Solorza wracają do gry. Tobias Solorz i Aleksandra Żak w radzie nadzorczej Cyfrowego Polsatu</title>
+      <link>https://www.bankier.pl/wiadomosc/Tobias-Solorz-i-Aleksandra-Zak-powolani-do-rady-nadzorczej-Cyfrowego-Polsatu-9061506.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Tobias-Solorz-i-Aleksandra-Zak-powolani-do-rady-nadzorczej-Cyfrowego-Polsatu-9061506.html</guid>
+      <pubDate>Mon, 29 Dec 2025 13:06:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Tajlandia oskarża Kambodżę o naruszenie porozumienia o zawieszeniu broni</title>
+      <link>https://www.bankier.pl/wiadomosc/Tajlandia-oskarza-Kambodze-o-naruszenie-porozumienia-o-zawieszeniu-broni-9061505.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Tajlandia-oskarza-Kambodze-o-naruszenie-porozumienia-o-zawieszeniu-broni-9061505.html</guid>
+      <pubDate>Mon, 29 Dec 2025 13:23:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Mo-Bruk liczy na 20 proc. wzrost przychodów w '26</title>
+      <link>https://www.bankier.pl/wiadomosc/Mo-Bruk-liczy-na-20-proc-wzrost-przychodow-w-26-jednym-z-priorytetow-sfinalizowanie-akwizycji-wywiad-9061522.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Mo-Bruk-liczy-na-20-proc-wzrost-przychodow-w-26-jednym-z-priorytetow-sfinalizowanie-akwizycji-wywiad-9061522.html</guid>
+      <pubDate>Mon, 29 Dec 2025 13:38:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Wiceminister rolnictwa: Protesty rolników ws. Mercosur są zasadne</title>
+      <link>https://www.bankier.pl/wiadomosc/Wiceminister-rolnictwa-Protesty-rolnikow-ws-Mercosur-sa-zasadne-9061519.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Wiceminister-rolnictwa-Protesty-rolnikow-ws-Mercosur-sa-zasadne-9061519.html</guid>
+      <pubDate>Mon, 29 Dec 2025 13:42:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>„Rosja szanuje NATO”. Skutki misji Baltic Sentry i Eastern Sentry</title>
+      <link>https://www.bankier.pl/wiadomosc/Rosja-szanuje-NATO-Skutki-misji-Baltic-Sentry-i-Eastern-Sentry-9061515.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Rosja-szanuje-NATO-Skutki-misji-Baltic-Sentry-i-Eastern-Sentry-9061515.html</guid>
+      <pubDate>Mon, 29 Dec 2025 13:55:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Umowa u notariusza zamiast związków partnerskich. Rząd zajmie się ustawą o „osobie najbliższej”</title>
+      <link>https://www.bankier.pl/wiadomosc/Umowa-u-notariusza-zamiast-zwiazkow-partnerskich-Rzad-zajmie-sie-ustawa-o-osobie-najblizszej-9061529.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Umowa-u-notariusza-zamiast-zwiazkow-partnerskich-Rzad-zajmie-sie-ustawa-o-osobie-najblizszej-9061529.html</guid>
+      <pubDate>Mon, 29 Dec 2025 14:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Budowa elektrowni jądrowej w Polsce. Podpisano aneks z Westinghouse-Bechtel</title>
+      <link>https://www.bankier.pl/wiadomosc/Budowa-elektrowni-jadrowej-w-Polsce-Podpisano-aneks-z-Westinghouse-Bechtel-9061428.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Budowa-elektrowni-jadrowej-w-Polsce-Podpisano-aneks-z-Westinghouse-Bechtel-9061428.html</guid>
+      <pubDate>Mon, 29 Dec 2025 14:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Przepisy ppoż kontra najem krótkoterminowy. Już nie będzie tak łatwo wynająć lokal</title>
+      <link>https://www.bankier.pl/wiadomosc/Przepisy-ppoz-kontra-najem-krotkoterminowy-Juz-nie-bedzie-tak-latwo-wynajac-lokal-9061520.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Przepisy-ppoz-kontra-najem-krotkoterminowy-Juz-nie-bedzie-tak-latwo-wynajac-lokal-9061520.html</guid>
+      <pubDate>Mon, 29 Dec 2025 14:10:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Zwrot w Pradze. Rząd Babisza stawia na dyplomację i odcina się od polityki poprzedników</title>
+      <link>https://www.bankier.pl/wiadomosc/Zwrot-w-Pradze-Rzad-Babisza-stawia-na-dyplomacje-i-odcina-sie-od-polityki-poprzednikow-9061511.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Zwrot-w-Pradze-Rzad-Babisza-stawia-na-dyplomacje-i-odcina-sie-od-polityki-poprzednikow-9061511.html</guid>
+      <pubDate>Mon, 29 Dec 2025 14:14:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Zastrzyk finansowy dla nauki. 50 mln zł dodatkowej subwencji na szkoły doktorskie</title>
+      <link>https://www.bankier.pl/wiadomosc/Zastrzyk-finansowy-dla-nauki-50-mln-zl-dodatkowej-subwencji-na-szkoly-doktorskie-9061513.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Zastrzyk-finansowy-dla-nauki-50-mln-zl-dodatkowej-subwencji-na-szkoly-doktorskie-9061513.html</guid>
+      <pubDate>Mon, 29 Dec 2025 14:22:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>PUE ZUS przechodzi do historii. W styczniu 2026 r. startuje eZUS</title>
+      <link>https://www.bankier.pl/wiadomosc/PUE-ZUS-przechodzi-do-historii-W-styczniu-2026-r-startuje-eZUS-9061564.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/PUE-ZUS-przechodzi-do-historii-W-styczniu-2026-r-startuje-eZUS-9061564.html</guid>
+      <pubDate>Mon, 29 Dec 2025 14:45:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>System kaucyjny się rozpędza. Polacy coraz chętniej oddają butelki</title>
+      <link>https://www.bankier.pl/wiadomosc/System-kaucyjny-sie-rozpedza-Polacy-coraz-chetniej-oddaja-butelki-9061491.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/System-kaucyjny-sie-rozpedza-Polacy-coraz-chetniej-oddaja-butelki-9061491.html</guid>
+      <pubDate>Mon, 29 Dec 2025 14:48:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Nawet 50 tys. zł za wydanie decyzji środowiskowej. Rządowy projekt nowelizacji</title>
+      <link>https://www.bankier.pl/wiadomosc/Nawet-50-tys-zl-za-wydanie-decyzji-srodowiskowej-Rzadowy-projekt-nowelizacji-9061571.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Nawet-50-tys-zl-za-wydanie-decyzji-srodowiskowej-Rzadowy-projekt-nowelizacji-9061571.html</guid>
+      <pubDate>Mon, 29 Dec 2025 14:53:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Kredyty pod zastaw tantiem i milion na alkohol. Poważne zarzuty wobec byłych władz SFP</title>
+      <link>https://www.bankier.pl/wiadomosc/Kredyty-pod-zastaw-tantiem-i-milion-na-alkohol-Powazne-zarzuty-wobec-bylych-wladz-SFP-9061550.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Kredyty-pod-zastaw-tantiem-i-milion-na-alkohol-Powazne-zarzuty-wobec-bylych-wladz-SFP-9061550.html</guid>
+      <pubDate>Mon, 29 Dec 2025 14:55:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Zimny prysznic dla Trumpa. Europejscy narodowcy nie chcą „wielkiego brata”</title>
+      <link>https://www.bankier.pl/wiadomosc/Zimny-prysznic-dla-Trumpa-Europejscy-narodowcy-nie-chca-wielkiego-brata-9061570.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Zimny-prysznic-dla-Trumpa-Europejscy-narodowcy-nie-chca-wielkiego-brata-9061570.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>S6 połączy Gdańsk ze Szczecinem. To nie jedyne plany GDDKiA na 2026 rok</title>
+      <link>https://www.bankier.pl/wiadomosc/S6-polaczy-Gdansk-ze-Szczecinem-To-nie-jedyne-plany-GDDKiA-na-2026-rok-9061489.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/S6-polaczy-Gdansk-ze-Szczecinem-To-nie-jedyne-plany-GDDKiA-na-2026-rok-9061489.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:22:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>15 zarzutów dla 4 osób w aferze Collegium Humanum. Wśród podejrzanych były ambasador i były poseł</title>
+      <link>https://www.bankier.pl/wiadomosc/15-zarzutow-dla-4-osob-w-aferze-Collegium-Humanum-Wsrod-podejrzanych-byly-ambasador-i-byly-posel-9061581.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/15-zarzutow-dla-4-osob-w-aferze-Collegium-Humanum-Wsrod-podejrzanych-byly-ambasador-i-byly-posel-9061581.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:33:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Spółka zależna Develii nabyła nieruchomości w Warszawie pod budowę ok. 212 lokali mieszkalnych</title>
+      <link>https://www.bankier.pl/wiadomosc/Spolka-zalezna-Develii-nabyla-nieruchomosci-w-Warszawie-pod-budowe-ok-212-lokali-mieszkalnych-9061600.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Spolka-zalezna-Develii-nabyla-nieruchomosci-w-Warszawie-pod-budowe-ok-212-lokali-mieszkalnych-9061600.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:48:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Sesje elixir</title>
+      <link>https://www.bankier.pl/wiadomosc/Sesje-Elixir-7368466.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Sesje-Elixir-7368466.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:50:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Jak rozwiązać umowę z Orange</title>
+      <link>https://www.bankier.pl/wiadomosc/Jak-rozwiazac-umowe-z-Orange-T-Mobile-Play-Plus-Sprawdzilismy-procedury-7500250.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Jak-rozwiazac-umowe-z-Orange-T-Mobile-Play-Plus-Sprawdzilismy-procedury-7500250.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:50:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Jak grać na giełdzie?</title>
+      <link>https://www.bankier.pl/wiadomosc/Jak-kupowac-akcje-Gielda-dla-poczatkujacych-7509041.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Jak-kupowac-akcje-Gielda-dla-poczatkujacych-7509041.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:50:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Umowa zlecenie</title>
+      <link>https://www.bankier.pl/wiadomosc/Umowa-zlecenie-wszystko-co-musisz-o-niej-wiedziec-700008.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Umowa-zlecenie-wszystko-co-musisz-o-niej-wiedziec-700008.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:50:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Bankowe hity na koniec roku. Wiemy, gdzie pożyczysz 25 tys. zł na najlepszych warunkach</title>
+      <link>https://www.bankier.pl/wiadomosc/Ranking-kredytow-gotowkowych-na-25-tys-zl-Bankowe-hity-na-koniec-roku-9058658.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Ranking-kredytow-gotowkowych-na-25-tys-zl-Bankowe-hity-na-koniec-roku-9058658.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:50:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Lokaty roczne w grudniu. Ponad 4% bez dodatkowych warunków tylko w jednym banku</title>
+      <link>https://www.bankier.pl/wiadomosc/Lokaty-roczne-w-grudniu-2025-Ponad-4-bez-dodatkowych-warunkow-tylko-w-jednym-banku-9059520.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Lokaty-roczne-w-grudniu-2025-Ponad-4-bez-dodatkowych-warunkow-tylko-w-jednym-banku-9059520.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:50:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Te banki tną raty najmocniej. Sprawdź najnowszy ranking kredytów konsolidacyjnych</title>
+      <link>https://www.bankier.pl/wiadomosc/Te-banki-tna-raty-najmocniej-Sprawdz-najnowszy-ranking-kredytow-konsolidacyjnych-9059622.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Te-banki-tna-raty-najmocniej-Sprawdz-najnowszy-ranking-kredytow-konsolidacyjnych-9059622.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:50:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Starbucks opuszcza Nowy Jork i Los Angeles. Sieć zamknie 400 kawiarni</title>
+      <link>https://www.bankier.pl/wiadomosc/Starbucks-opuszcza-Nowy-Jork-i-Los-Angeles-Siec-zamknie-400-kawiarnii-9061412.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Starbucks-opuszcza-Nowy-Jork-i-Los-Angeles-Siec-zamknie-400-kawiarnii-9061412.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:50:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Rząd o PG Silesia: Pomożemy górnikom, ale nie prywatnemu właścicielowi</title>
+      <link>https://www.bankier.pl/wiadomosc/Rzad-o-PG-Silesia-Pomozemy-gornikom-ale-nie-prywatnemu-wlascicielowi-9061562.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Rzad-o-PG-Silesia-Pomozemy-gornikom-ale-nie-prywatnemu-wlascicielowi-9061562.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:50:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Koniec roku dla wynajmujących. Ceny w ogłoszeniach nadal spadają</title>
+      <link>https://www.bankier.pl/wiadomosc/Ceny-ofertowe-wynajmu-mieszkan-grudzien-2025-Raport-Bankier-pl-9059883.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Ceny-ofertowe-wynajmu-mieszkan-grudzien-2025-Raport-Bankier-pl-9059883.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:50:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Comex podnosi depozyty na srebrze. Będzie jak w 2011 i 1980?</title>
+      <link>https://www.bankier.pl/wiadomosc/Comex-podnosi-depozyty-na-srebrze-Bedzie-jak-w-2011-i-1980-9061413.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Comex-podnosi-depozyty-na-srebrze-Bedzie-jak-w-2011-i-1980-9061413.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:50:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Koniec dopłat dla osób nieprowadzących upraw? Rząd zajmie się rejestrem „aktywnych rolników”</title>
+      <link>https://www.bankier.pl/wiadomosc/Koniec-doplat-dla-osob-nieprowadzacych-upraw-Rzad-zajmie-sie-rejestrem-aktywnych-rolnikow-9061514.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Koniec-doplat-dla-osob-nieprowadzacych-upraw-Rzad-zajmie-sie-rejestrem-aktywnych-rolnikow-9061514.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:50:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Wynagrodzenia w Radzie NCBR mają wzrosnąć o 20 proc. Jest projekt</title>
+      <link>https://www.bankier.pl/wiadomosc/Wynagrodzenia-w-Radzie-NCBR-maja-wzrosnac-o-20-proc-Jest-projekt-9061588.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Wynagrodzenia-w-Radzie-NCBR-maja-wzrosnac-o-20-proc-Jest-projekt-9061588.html</guid>
+      <pubDate>Mon, 29 Dec 2025 15:50:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Finał sporu o sukcesję. Dzieci Zygmunta Solorza w radzie nadzorczej ZE PAK</title>
+      <link>https://www.bankier.pl/wiadomosc/Final-sporu-o-sukcesje-Dzieci-Zygmunta-Solorza-w-radzie-nadzorczej-ZE-PAK-9061607.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Final-sporu-o-sukcesje-Dzieci-Zygmunta-Solorza-w-radzie-nadzorczej-ZE-PAK-9061607.html</guid>
+      <pubDate>Mon, 29 Dec 2025 16:01:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>mObywatel na licencji open source. Resort cyfryzacji opublikował fragmenty kodu źródłowego</title>
+      <link>https://www.bankier.pl/wiadomosc/mObywatel-na-licencji-open-source-Resort-cyfryzacji-opublikowal-fragmenty-kodu-zrodlowego-9061608.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/mObywatel-na-licencji-open-source-Resort-cyfryzacji-opublikowal-fragmenty-kodu-zrodlowego-9061608.html</guid>
+      <pubDate>Mon, 29 Dec 2025 16:04:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Miliardy na amunicję. Polska wyprodukuje ponad 10 tys. rakiet do wyrzutni Homar-K</title>
+      <link>https://www.bankier.pl/wiadomosc/Miliardy-na-amunicje-Polska-wyprodukuje-ponad-10-tys-rakiet-do-wyrzutni-Homar-K-9061594.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Miliardy-na-amunicje-Polska-wyprodukuje-ponad-10-tys-rakiet-do-wyrzutni-Homar-K-9061594.html</guid>
+      <pubDate>Mon, 29 Dec 2025 16:38:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Nadchodzi długo wyczekiwana zmiana w Gmailu</title>
+      <link>https://www.bankier.pl/wiadomosc/Nadchodzi-dlugo-wyczekiwana-zmiana-Google-umozliwi-zmiane-loginu-w-Gmailu-9061645.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Nadchodzi-dlugo-wyczekiwana-zmiana-Google-umozliwi-zmiane-loginu-w-Gmailu-9061645.html</guid>
+      <pubDate>Mon, 29 Dec 2025 17:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Koniec specustawy ukraińskiej. Rząd ujednolica system ochrony czasowej dla wszystkich uchodźców</title>
+      <link>https://www.bankier.pl/wiadomosc/Koniec-specustawy-ukrainskiej-Rzad-ujednolica-system-ochrony-czasowej-dla-wszystkich-uchodzcow-9061653.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Koniec-specustawy-ukrainskiej-Rzad-ujednolica-system-ochrony-czasowej-dla-wszystkich-uchodzcow-9061653.html</guid>
+      <pubDate>Mon, 29 Dec 2025 17:06:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Zełenski dla Fox News: Ukraińcy nie poprą w referendum wycofania się z Donbasu</title>
+      <link>https://www.bankier.pl/wiadomosc/Zelenski-dla-Fox-News-Ukraincy-nie-popra-w-referendum-wycofania-sie-z-Donbasu-9061639.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Zelenski-dla-Fox-News-Ukraincy-nie-popra-w-referendum-wycofania-sie-z-Donbasu-9061639.html</guid>
+      <pubDate>Mon, 29 Dec 2025 17:10:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Leniwy poniedziałek na GPW. WIG i WIG20 kończą tuż poniżej rekordów</title>
+      <link>https://www.bankier.pl/wiadomosc/Leniwy-poniedzialek-na-GPW-WIG-i-WIG20-koncza-tuz-ponizej-rekordow-9061664.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Leniwy-poniedzialek-na-GPW-WIG-i-WIG20-koncza-tuz-ponizej-rekordow-9061664.html</guid>
+      <pubDate>Mon, 29 Dec 2025 17:14:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>GOG w rękach współzałożyciela CD Projektu. Podpisano umowę dystrybucyjną na 6 lat</title>
+      <link>https://www.bankier.pl/wiadomosc/CD-Projekt-zawarl-z-Michalem-Kicinskim-akcjonariuszem-spolki-umowe-sprzedazy-udzialow-spolki-GOG-9061673.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/CD-Projekt-zawarl-z-Michalem-Kicinskim-akcjonariuszem-spolki-umowe-sprzedazy-udzialow-spolki-GOG-9061673.html</guid>
+      <pubDate>Mon, 29 Dec 2025 17:39:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>„Rosja chce sukcesu Ukrainy”? Zaskakujące deklaracje Trumpa po rozmowie z Putinem</title>
+      <link>https://www.bankier.pl/wiadomosc/Rosja-chce-sukcesu-Ukrainy-Zaskakujace-deklaracje-Trumpa-po-rozmowie-z-Putinem-9061682.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Rosja-chce-sukcesu-Ukrainy-Zaskakujace-deklaracje-Trumpa-po-rozmowie-z-Putinem-9061682.html</guid>
+      <pubDate>Mon, 29 Dec 2025 17:42:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Kontrowersyjna reklama piwa z Mikołajem oburzyła widzów. KRRiT zleciła kontrolę</title>
+      <link>https://www.bankier.pl/wiadomosc/Kontrowersyjna-reklama-piwa-z-Mikolajem-oburzyla-widzow-KRRiT-zlecila-kontrole-9061678.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Kontrowersyjna-reklama-piwa-z-Mikolajem-oburzyla-widzow-KRRiT-zlecila-kontrole-9061678.html</guid>
+      <pubDate>Mon, 29 Dec 2025 17:48:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Jest przetarg na pierwszy odcinek Kolei Dużych Prędkości. Trasa na Mazowszu</title>
+      <link>https://www.bankier.pl/wiadomosc/Jest-przetarg-na-pierwszy-odcinek-Kolei-Duzych-Predkosci-Trasa-na-Mazowszu-9061694.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Jest-przetarg-na-pierwszy-odcinek-Kolei-Duzych-Predkosci-Trasa-na-Mazowszu-9061694.html</guid>
+      <pubDate>Mon, 29 Dec 2025 17:56:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>PKP Cargo obniżyło kapitał zakładowy o 2,19 mld zł w celu pokrycia straty za 2024 r.</title>
+      <link>https://www.bankier.pl/wiadomosc/PKP-Cargo-obnizylo-kapital-zakladowy-o-2-19-mld-zl-w-celu-pokrycia-straty-za-2024-r-9061713.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/PKP-Cargo-obnizylo-kapital-zakladowy-o-2-19-mld-zl-w-celu-pokrycia-straty-za-2024-r-9061713.html</guid>
+      <pubDate>Mon, 29 Dec 2025 18:22:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Spór o awanse w cieniu rekordowych wydatków. Rząd wyciąga rękę do prezydenta</title>
+      <link>https://www.bankier.pl/wiadomosc/Spor-o-awanse-w-cieniu-rekordowych-wydatkow-Rzad-wyciaga-reke-do-prezydenta-9061666.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Spor-o-awanse-w-cieniu-rekordowych-wydatkow-Rzad-wyciaga-reke-do-prezydenta-9061666.html</guid>
+      <pubDate>Mon, 29 Dec 2025 19:04:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Rząd przyjął dekret w sprawie przedłużenia pomocy wojskowej dla Ukrainy na 2026 r.</title>
+      <link>https://www.bankier.pl/wiadomosc/Rzad-przyjal-dekret-w-sprawie-przedluzenia-pomocy-wojskowej-dla-Ukrainy-na-2026-r-9061735.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Rzad-przyjal-dekret-w-sprawie-przedluzenia-pomocy-wojskowej-dla-Ukrainy-na-2026-r-9061735.html</guid>
+      <pubDate>Mon, 29 Dec 2025 19:18:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Kolejna prezesura Piotra Żaka. Po Polsacie i Cyfrowym Polsacie przejmuje stery w ZE PAK</title>
+      <link>https://www.bankier.pl/wiadomosc/RN-ZE-PAK-powolala-Piotra-Zaka-na-funkcje-prezesa-zarzadu-spolki-9061738.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/RN-ZE-PAK-powolala-Piotra-Zaka-na-funkcje-prezesa-zarzadu-spolki-9061738.html</guid>
+      <pubDate>Mon, 29 Dec 2025 19:22:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Jest porozumienie w PG Silesia. Bumech wydzierżawi kopalnię, a pracownicy trafią pod ochronę</title>
+      <link>https://www.bankier.pl/wiadomosc/Jest-porozumienie-w-PG-Silesia-Bumech-wydzierzawi-kopalnie-a-pracownicy-trafia-pod-ochrone-9061712.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Jest-porozumienie-w-PG-Silesia-Bumech-wydzierzawi-kopalnie-a-pracownicy-trafia-pod-ochrone-9061712.html</guid>
+      <pubDate>Mon, 29 Dec 2025 19:35:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>„Kamraci” w Kanale Zero. Medioznawcy krytykują Stanowskiego po materiale z patostreamerami</title>
+      <link>https://www.bankier.pl/wiadomosc/Kamraci-w-Kanale-Zero-Medioznawcy-krytykuja-Stanowskiego-po-materiale-z-patostreamerami-9061741.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Kamraci-w-Kanale-Zero-Medioznawcy-krytykuja-Stanowskiego-po-materiale-z-patostreamerami-9061741.html</guid>
+      <pubDate>Mon, 29 Dec 2025 19:48:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Kryzys w Iranie. Sklepikarze zamykają biznesy, kurs riala na dnie</title>
+      <link>https://www.bankier.pl/wiadomosc/Kryzys-w-Iranie-Sklepikarze-zamykaja-biznesy-kurs-riala-na-dnie-9061753.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Kryzys-w-Iranie-Sklepikarze-zamykaja-biznesy-kurs-riala-na-dnie-9061753.html</guid>
+      <pubDate>Mon, 29 Dec 2025 20:10:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Rosja oskarża Ukrainę o próbę ataku na rezydencję Putina. Zełenski zaprzecza</title>
+      <link>https://www.bankier.pl/wiadomosc/Rosja-oskarza-Ukraine-o-probe-ataku-na-rezydencje-Putina-Zelenski-zaprzecza-9061647.html</link>
+      <guid isPermaLink="true">https://www.bankier.pl/wiadomosc/Rosja-oskarza-Ukraine-o-probe-ataku-na-rezydencje-Putina-Zelenski-zaprzecza-9061647.html</guid>
+      <pubDate>Mon, 29 Dec 2025 21:09:00 +0100</pubDate>
+    </item>
+  </channel>
+</rss>
